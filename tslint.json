@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "tslint-config-airbnb",
+        "tslint-config-prettier"
+    ],
+    "rulesDirectory": ["tslint-plugin-prettier"],
+    "rules": {
+        "linebreak-style": [true, "LF"],
+        "max-line-length": [true, 120],
+        "indent": [true, "spaces", 4],
+        "semicolon": [true, "never"],
+        "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+        "quotemark": [true, "double"],
+        "eofline": true,
+        "no-trailing-whitespace": [true, "ignore-blank-lines", "ignore-comments", "ignore-jsdoc"],
+        "no-consecutive-blank-lines": [true, 3],
+        "import-name": false,
+        "curly": [true, "as-needed"],
+        
+        "prettier": [
+            {
+                "endOfLine": "lf", 
+                "printWidth": 120,
+                "useTabs": false,
+                "tabWidth": 4,
+                "semi": false,
+                "trailingComma": "all"
+            },
+            false
+        ]
+    }
+}
