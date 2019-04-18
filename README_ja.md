@@ -10,7 +10,7 @@ IFTTT は様々なサービスを連携してくれる大変便利なサービ�
 
 # DEMO
 
-![demo](https://github.com/miso-develop/ifttt-cli-dev/images/demo.gif)
+![demo](https://raw.githubusercontent.com/miso-develop/ifttt-cli/master/images/demo.gif)
 
 # Getting Started
 

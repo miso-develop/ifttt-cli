@@ -10,7 +10,7 @@ The specification starts Chrome in headless mode with Puppeteer and performs web
 
 # DEMO
 
-![demo](https://github.com/miso-develop/ifttt-cli-dev/images/demo.gif)
+![demo](https://raw.githubusercontent.com/miso-develop/ifttt-cli/master/images/demo.gif)
 
 # Getting Started
 
