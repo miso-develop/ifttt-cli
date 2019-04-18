@@ -221,7 +221,7 @@ export default class IFTTT {
     
     public async checkErrorMessage(): Promise<boolean> {
         try {
-            // FIXME: Confirm that no error occurs for 3 seconds. This is not good.
+            // HACK: Confirm that no error occurs for 3 seconds. This is not good.
             await this.page.waitForSelector(`.error-message`, { timeout: 3000 })
         } catch (e) {
             return false

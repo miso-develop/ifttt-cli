@@ -129,7 +129,7 @@ export class Detail extends Page {
     }
     
     public async updateStatus(status: boolean): Promise<void> {
-        // FIXME: sleep...
+        // HACK: sleep...
         await this.ifttt.page.waitFor(1000)
         const currentState: boolean = await this.ifttt.getSwitchState()
         if (status !== currentState) {
@@ -276,7 +276,7 @@ export class Create extends Page {
     }
     
     public async selectService(serviceId: string): Promise<void> {
-        // FIXME: sleep
+        // HACK: sleep
         await this.ifttt.page.waitFor(500)
         await this.ifttt.moveClick("span.plus")
         if (!(await this.checkServiceId(serviceId))) throw strings.message.command.error.serviceIdNotFound
@@ -292,7 +292,7 @@ export class Create extends Page {
     }
     
     public async selectServiceType(type: string): Promise<void> {
-        // FIXME: sleep
+        // HACK: sleep
         await this.ifttt.page.waitFor(500)
         if (!(await this.checkServiceType(type))) throw strings.message.command.error.serviceTypeNotFound
         await this.ifttt.moveClick(`div.tanda-selector > ul > li[data-track-data*=${type}]`)
@@ -322,7 +322,7 @@ export class Create extends Page {
     public async setAppletName(name: string): Promise<void> {
         const selector = "textarea:nth-child(1)"
         await this.ifttt.typeOverwrite(selector, name)
-        // FIXME: sleep
+        // HACK: sleep
         await this.ifttt.page.waitFor(500)
     }
     

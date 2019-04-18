@@ -14,7 +14,7 @@ export default {
                     logout: "Log out of IFTTT.",
                     connect: "Connect to the specified service.",
                     list: "Display a list of applets.\nUse the `-l, --long` option to display the details.",
-                    get: "Get the applet recipe.\nThe recipe of all applets is acquired by specifying `-a, -all` option.",
+                    get: "Get the applet recipe.\nThe recipe of all applets is acquired by specifying `-a, --all` option.",
                     create: "Create the applet.\nSpecify and execute a JSON file containing a recipe.",
                     delete: "Remove the applet.\nSpecify the ID of the applet you want to delete and execute it.",
                     update: "Update the applet.\nSpecify and execute a JSON file containing a recipe.",
@@ -40,7 +40,7 @@ export default {
                 mailAddress: "Error: E-mail address format is invalid!",
                 password: "Error: Password must be at least 6 characters!",
                 file: "Error: File not found!",
-                get: "Error: Specify the applet ID for which you want to get the recipe, or the `-a, -all` option!",
+                get: "Error: Specify the applet ID for which you want to get the recipe, or the `-a, --all` option!",
             },
         },
         command: {
