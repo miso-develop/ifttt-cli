@@ -8,13 +8,16 @@ With this tool you can easily manage and maintain IFTTT from the command line.
 
 The specification starts Chrome in headless mode with Puppeteer and performs web operation in the background. 
 
+# DEMO
+
+![demo](./images/demo.gif)
+
 # Getting Started
 
 ## Prerequisites
 An environment of Node.js v8.0.0 or higher is required. 
 
 ## Installation
-Execute the following command. 
 
 ```bash
 $ npm install -g ifttt-cli
@@ -28,7 +31,7 @@ Execute the following command to launch Chrome and display the IFTTT login scree
 $ ifttt login
 ```
 
-You can also login in headless mode by specifying the `-e, -email` option, followed by the e-mail address and password. 
+You can also login in headless mode by specifying the `-e, --email` option, followed by the e-mail address and password. 
 
 ```bash
 $ ifttt login -e email@example.com password
@@ -55,7 +58,7 @@ Commands:
                                             display the details.
   ifttt get [id..]                          Get the applet recipe.
                                             The recipe of all applets is
-                                            acquired by specifying `-a, -all`
+                                            acquired by specifying `-a, --all`
                                             option.
   ifttt create <file>                       Create the applet.
                                             Specify and execute a JSON file

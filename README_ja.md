@@ -8,13 +8,16 @@ IFTTT は様々なサービスを連携してくれる大変便利なサービ�
 
 仕組みは Puppeteer にて Chrome をヘッドレスモードで起動し、バックグラウンドで Web 操作を行います。 
 
+# DEMO
+
+![demo](./images/demo.gif)
+
 # Getting Started
 
 ## Prerequisites
 Node.js v8.0.0以上の環境が必要です。 
 
 ## Installation
-以下のコマンドを実行します。 
 
 ```bash
 $ npm install -g ifttt-cli
@@ -28,7 +31,7 @@ IFTTT へのログインを行います。
 $ ifttt login
 ```
 
-`-e, -email`オプションに続けてメールアドレスとパスワードを指定することでヘッドレスモードでログインできます。 
+`-e, --email`オプションに続けてメールアドレスとパスワードを指定することでヘッドレスモードでログインできます。 
 
 ```bash
 $ ifttt login -e email@example.com password
@@ -55,7 +58,7 @@ Commands:
                                             display the details.
   ifttt get [id..]                          Get the applet recipe.
                                             The recipe of all applets is
-                                            acquired by specifying `-a, -all`
+                                            acquired by specifying `-a, --all`
                                             option.
   ifttt create <file>                       Create the applet.
                                             Specify and execute a JSON file
